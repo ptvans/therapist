@@ -42,7 +42,13 @@ function Header() {
 
           <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
             <li>
-              <Link to="/about" className="nav-link" onClick={handleLinkClick}>Private Therapy</Link>
+              <Link to="/individuals" className="nav-link" onClick={handleLinkClick}>Individuals</Link>
+            </li>
+            <li>
+              <Link to="/couples" className="nav-link" onClick={handleLinkClick}>Couples</Link>
+            </li>
+            <li>
+              <Link to="/about" className="nav-link" onClick={handleLinkClick}>About</Link>
             </li>
             <li>
               <Link to="/services" className="nav-link" onClick={handleLinkClick}>Services</Link>

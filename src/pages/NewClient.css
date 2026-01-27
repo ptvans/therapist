@@ -31,6 +31,7 @@
   border-radius: var(--border-radius);
   padding: 2.5rem;
   box-shadow: var(--shadow);
+  min-height: 750px;
 }
 
 .client-form {
