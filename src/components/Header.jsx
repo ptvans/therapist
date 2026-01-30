@@ -54,9 +54,6 @@ function Header() {
               <Link to="/services" className="nav-link" onClick={handleLinkClick}>Services</Link>
             </li>
             <li>
-              <Link to="/servicios" className="nav-link" onClick={handleLinkClick}>Español</Link>
-            </li>
-            <li>
               <Link to="/new-client" className="nav-link" onClick={handleLinkClick}>Contact</Link>
             </li>
             <li>

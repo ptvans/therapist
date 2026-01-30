@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './NewClient.css'
 
 function NewClient() {
@@ -26,6 +27,10 @@ function NewClient() {
 
         <div className="new-client-content">
           <div className="client-info">
+            <div className="client-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
+
             <div className="info-card">
               <h3>Getting Started</h3>
               <p>

@@ -1,17 +1,25 @@
 import ContactForm from '../components/ContactForm'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './Treatment.css'
 
 function IndividualsSexLoveAddiction() {
   return (
     <div className="treatment">
       <section className="section-minimal">
-        <div className="container-narrow">
-          <h1>Sex & Love Addiction Recovery</h1>
-          <p className="intro-text">
-            Recovery from sex and love addiction is possible. In a compassionate,
-            non-judgmental space, we'll work together toward healthier patterns
-            and deeper self-understanding.
-          </p>
+        <div className="container">
+          <div className="treatment-intro">
+            <div className="treatment-intro-content">
+              <h1>Sex & Love Addiction Recovery</h1>
+              <p className="intro-text">
+                Recovery from sex and love addiction is possible. In a compassionate,
+                non-judgmental space, we'll work together toward healthier patterns
+                and deeper self-understanding.
+              </p>
+            </div>
+            <div className="treatment-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
+          </div>
         </div>
       </section>
 

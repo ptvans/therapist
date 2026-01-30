@@ -1,18 +1,26 @@
 import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './Couples.css'
 
 function Couples() {
   return (
     <div className="couples">
       <section className="section-minimal">
-        <div className="container-narrow">
-          <h1>Therapy for Couples</h1>
-          <p className="intro-text">
-            Couples therapy offers a supportive environment where partners can improve
-            communication, resolve conflicts, and deepen their connection. Whether you're
-            navigating a rough patch or looking to strengthen your bond, I'm here to help.
-          </p>
+        <div className="container">
+          <div className="page-intro">
+            <div className="page-intro-content">
+              <h1>Therapy for Couples</h1>
+              <p className="intro-text">
+                Couples therapy offers a supportive environment where partners can improve
+                communication, resolve conflicts, and deepen their connection. Whether you're
+                navigating a rough patch or looking to strengthen your bond, I'm here to help.
+              </p>
+            </div>
+            <div className="page-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
+          </div>
         </div>
       </section>
 

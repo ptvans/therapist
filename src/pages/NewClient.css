@@ -16,6 +16,17 @@
   gap: 1.5rem;
 }
 
+.client-portrait {
+  width: 200px;
+  margin: 0 auto 1rem;
+}
+
+.client-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
 .client-info ol {
   padding-left: 1.25rem;
   margin: 0;

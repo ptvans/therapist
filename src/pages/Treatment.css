@@ -1,11 +1,48 @@
 .treatment h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .treatment .intro-text {
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-secondary);
+}
+
+.treatment-intro {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.treatment-intro-content {
+  flex: 1;
+  text-align: left;
+}
+
+.treatment-portrait {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.treatment-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .treatment-intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .treatment-intro-content {
+    text-align: center;
+  }
+
+  .treatment-portrait {
+    width: 200px;
+  }
 }
 
 .treatment h2 {

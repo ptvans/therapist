@@ -1,11 +1,48 @@
 .couples h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .couples .intro-text {
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-secondary);
+}
+
+.couples .page-intro {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.couples .page-intro-content {
+  flex: 1;
+  text-align: left;
+}
+
+.couples .page-portrait {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.couples .page-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .couples .page-intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .couples .page-intro-content {
+    text-align: center;
+  }
+
+  .couples .page-portrait {
+    width: 200px;
+  }
 }
 
 .couples h2 {

@@ -1,18 +1,26 @@
 import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './Individuals.css'
 
 function Individuals() {
   return (
     <div className="individuals">
       <section className="section-minimal">
-        <div className="container-narrow">
-          <h1>Therapy for Individuals</h1>
-          <p className="intro-text">
-            Individual therapy provides a confidential space to explore your thoughts,
-            feelings, and behaviors with a trained professional. Whether you're facing
-            a specific challenge or seeking personal growth, I'm here to support your journey.
-          </p>
+        <div className="container">
+          <div className="page-intro">
+            <div className="page-intro-content">
+              <h1>Therapy for Individuals</h1>
+              <p className="intro-text">
+                Individual therapy provides a confidential space to explore your thoughts,
+                feelings, and behaviors with a trained professional. Whether you're facing
+                a specific challenge or seeking personal growth, I'm here to support your journey.
+              </p>
+            </div>
+            <div className="page-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
+          </div>
         </div>
       </section>
 

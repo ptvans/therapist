@@ -1,17 +1,25 @@
 import ContactForm from '../components/ContactForm'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './Treatment.css'
 
 function CouplesCommunication() {
   return (
     <div className="treatment">
       <section className="section-minimal">
-        <div className="container-narrow">
-          <h1>Communication & Connection</h1>
-          <p className="intro-text">
-            Strong relationships are built on effective communication and emotional
-            connection. Using proven therapeutic approaches, I help couples break
-            negative patterns and build lasting intimacy.
-          </p>
+        <div className="container">
+          <div className="treatment-intro">
+            <div className="treatment-intro-content">
+              <h1>Communication & Connection</h1>
+              <p className="intro-text">
+                Strong relationships are built on effective communication and emotional
+                connection. Using proven therapeutic approaches, I help couples break
+                negative patterns and build lasting intimacy.
+              </p>
+            </div>
+            <div className="treatment-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
+          </div>
         </div>
       </section>
 

@@ -1,16 +1,24 @@
 import ContactForm from '../components/ContactForm'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './Treatment.css'
 
 function IndividualsAnxiety() {
   return (
     <div className="treatment">
       <section className="section-minimal">
-        <div className="container-narrow">
-          <h1>Anxiety Treatment</h1>
-          <p className="intro-text">
-            Anxiety can feel overwhelming, but with the right support and tools,
-            you can learn to manage it effectively and reclaim your life.
-          </p>
+        <div className="container">
+          <div className="treatment-intro">
+            <div className="treatment-intro-content">
+              <h1>Anxiety Treatment</h1>
+              <p className="intro-text">
+                Anxiety can feel overwhelming, but with the right support and tools,
+                you can learn to manage it effectively and reclaim your life.
+              </p>
+            </div>
+            <div className="treatment-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
+          </div>
         </div>
       </section>
 

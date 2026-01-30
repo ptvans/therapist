@@ -1,5 +1,48 @@
 .services h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+.services-intro {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.services-intro-content {
+  flex: 1;
+  text-align: left;
+}
+
+.services-portrait {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.services-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .services-intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .services-intro-content {
+    text-align: center;
+  }
+
+  .services-portrait {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .rates-list,
+  .rates-notes {
+    text-align: left;
+  }
 }
 
 .rates-list {

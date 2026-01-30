@@ -1,14 +1,17 @@
 import ContactForm from '../components/ContactForm'
+import terraPortrait from '../photos/terra-portrait.jpg'
 import './Services.css'
 
 function Services() {
   return (
     <div className="services">
       <section className="section-minimal">
-        <div className="container-narrow">
-          <h1>Services & Rates</h1>
+        <div className="container">
+          <div className="services-intro">
+            <div className="services-intro-content">
+              <h1>Services & Rates</h1>
 
-          <div className="rates-list">
+              <div className="rates-list">
             <div className="rate-item">
               <span className="rate-service">Individual Sessions</span>
               <span className="rate-price">$180</span>
@@ -19,8 +22,13 @@ function Services() {
             </div>
           </div>
 
-          <div className="rates-notes">
-            <p>I offer a sliding scale if needed.</p>
+              <div className="rates-notes">
+                <p>I offer a sliding scale if needed.</p>
+              </div>
+            </div>
+            <div className="services-portrait">
+              <img src={terraPortrait} alt="Terra" />
+            </div>
           </div>
 
           <div className="policy-section">

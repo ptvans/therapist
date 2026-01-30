@@ -1,11 +1,48 @@
 .individuals h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .individuals .intro-text {
   font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-secondary);
+}
+
+.page-intro {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.page-intro-content {
+  flex: 1;
+  text-align: left;
+}
+
+.page-portrait {
+  flex-shrink: 0;
+  width: 280px;
+}
+
+.page-portrait img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .page-intro {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .page-intro-content {
+    text-align: center;
+  }
+
+  .page-portrait {
+    width: 200px;
+  }
 }
 
 .individuals h2 {
