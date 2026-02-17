@@ -18,7 +18,7 @@ function Home() {
             Do you want your life and your relationship to be deeply aligned with your heart?
           </p>
           <div className="hero-cta">
-            <Link to="/about" className="link-subtle">Learn more about my approach</Link>
+            <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
           </div>
         </div>
       </section>

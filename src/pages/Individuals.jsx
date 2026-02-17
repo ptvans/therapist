@@ -16,6 +16,7 @@ function Individuals() {
                 feelings, and behaviors with a trained professional. Whether you're facing
                 a specific challenge or seeking personal growth, I'm here to support your journey.
               </p>
+              <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
             </div>
             <div className="page-portrait">
               <img src={terraPortrait} alt="Terra" />

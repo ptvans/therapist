@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import terraPortrait from '../photos/terra-portrait.jpg'
 import './Treatment.css'
@@ -15,6 +16,7 @@ function IndividualsSexLoveAddiction() {
                 non-judgmental space, we'll work together toward healthier patterns
                 and deeper self-understanding.
               </p>
+              <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
             </div>
             <div className="treatment-portrait">
               <img src={terraPortrait} alt="Terra" />

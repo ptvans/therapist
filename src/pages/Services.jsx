@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import terraPortrait from '../photos/terra-portrait.jpg'
 import './Services.css'
@@ -25,6 +26,7 @@ function Services() {
               <div className="rates-notes">
                 <p>I offer a sliding scale if needed.</p>
               </div>
+              <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
             </div>
             <div className="services-portrait">
               <img src={terraPortrait} alt="Terra" />

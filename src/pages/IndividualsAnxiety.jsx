@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import ContactForm from '../components/ContactForm'
 import terraPortrait from '../photos/terra-portrait.jpg'
 import './Treatment.css'
@@ -14,6 +15,7 @@ function IndividualsAnxiety() {
                 Anxiety can feel overwhelming, but with the right support and tools,
                 you can learn to manage it effectively and reclaim your life.
               </p>
+              <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
             </div>
             <div className="treatment-portrait">
               <img src={terraPortrait} alt="Terra" />

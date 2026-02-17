@@ -51,10 +51,13 @@ function Header() {
               <Link to="/about" className="nav-link" onClick={handleLinkClick}>About</Link>
             </li>
             <li>
-              <Link to="/services" className="nav-link" onClick={handleLinkClick}>Services</Link>
+              <Link to="/services" className="nav-link" onClick={handleLinkClick}>Rates</Link>
             </li>
             <li>
-              <Link to="/new-client" className="nav-link" onClick={handleLinkClick}>Contact</Link>
+              <a href="https://blog.youralignedheart.com/" className="nav-link" onClick={handleLinkClick}>Blog</a>
+            </li>
+            <li>
+              <Link to="/new-client" className="nav-btn" onClick={handleLinkClick}>Get Started</Link>
             </li>
             <li>
               <a href="https://www.instagram.com/terra_artist_love/" target="_blank" rel="noopener noreferrer" className="nav-link nav-icon">

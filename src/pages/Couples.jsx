@@ -16,6 +16,7 @@ function Couples() {
                 communication, resolve conflicts, and deepen their connection. Whether you're
                 navigating a rough patch or looking to strengthen your bond, I'm here to help.
               </p>
+              <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
             </div>
             <div className="page-portrait">
               <img src={terraPortrait} alt="Terra" />
