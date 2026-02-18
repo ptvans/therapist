@@ -57,7 +57,7 @@ function Header() {
               <a href="https://blog.youralignedheart.com/" className="nav-link" onClick={handleLinkClick}>Blog</a>
             </li>
             <li>
-              <Link to="/new-client" className="nav-btn" onClick={handleLinkClick}>Get Started</Link>
+              <Link to="/new-client" className="nav-btn" onClick={handleLinkClick}>Contact Me</Link>
             </li>
             <li>
               <a href="https://www.instagram.com/terra_artist_love/" target="_blank" rel="noopener noreferrer" className="nav-link nav-icon" aria-label="Instagram (opens in new tab)">
