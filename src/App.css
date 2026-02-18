@@ -1,3 +1,20 @@
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-weight: 500;
+  z-index: 2000;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+  color: var(--white);
+}
+
 .app {
   display: flex;
   flex-direction: column;
@@ -42,7 +59,7 @@
 }
 
 .btn-primary:hover {
-  background-color: #5A7A6D;
+  background-color: #3D6354;
   color: var(--white);
 }
 
@@ -83,10 +100,11 @@
   background-color: var(--white);
 }
 
-.form-input:focus,
-.form-textarea:focus,
-.form-select:focus {
-  outline: none;
+.form-input:focus-visible,
+.form-textarea:focus-visible,
+.form-select:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
   border-color: var(--primary-color);
 }
 

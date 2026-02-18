@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import ContactForm from '../components/ContactForm'
 import terraPortrait from '../photos/terra-portrait.jpg'
 import './Treatment.css'
 
@@ -19,7 +18,7 @@ function CouplesCommunication() {
               <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
             </div>
             <div className="treatment-portrait">
-              <img src={terraPortrait} alt="Terra" />
+              <img src={terraPortrait} alt="" />
             </div>
           </div>
         </div>
@@ -75,11 +74,6 @@ function CouplesCommunication() {
         </div>
       </section>
 
-      <section className="section-minimal section-alt">
-        <div className="container">
-          <ContactForm />
-        </div>
-      </section>
     </div>
   )
 }

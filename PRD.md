@@ -69,20 +69,31 @@ therapist/
 - Therapeutic modalities: Motivational Interviewing, ACT, MBCT
 - "Who I Work With" section
 
-### 3. Services Pages
-- **English** (`/services`): Rates ($150 individual/$300 couples), insurance, sliding scale
-- **Spanish** (`/servicios`): Full Spanish translation
+### 3. Individual Therapy Pages
+- **Individuals Landing** (`/individuals`): Overview with service cards
+- **Anxiety Treatment** (`/individuals/anxiety`): ACT and MBSR approaches
+- **Sex & Love Addiction** (`/individuals/sex-love-addiction`): Recovery support
 
-### 4. New Client Intake Form (`/new-client`)
-- Comprehensive contact form with validation
-- Fields: personal info, therapeutic history, source tracking
-- Emergency crisis disclaimer with 988 lifeline
-- GoHighLevel CRM integration (demo mode available)
+### 4. Couples Therapy Pages
+- **Couples Landing** (`/couples`): Overview with service cards
+- **Communication & Connection** (`/couples/communication`): Gottman Method and EFT
 
-### 5. Navigation
-- Fixed header with responsive design
-- Mobile hamburger menu with animations
-- Links: Private Therapy, Services, Español, Contact, Instagram
+### 5. Rates Page (`/services`)
+- Rates ($180 individual / $300 couples), insurance, sliding scale, cancellation policy, teletherapy
+
+### 6. New Client / Contact (`/new-client`)
+- Embedded LeadConnector intake form (iframe)
+- "Getting Started" and "What Happens Next" info cards
+
+### 7. Blog
+- External link to WordPress blog at blog.youralignedheart.com
+
+### 8. Navigation
+- Fixed header with responsive hamburger menu
+- Nav links: Individuals, Couples, About, Rates, Blog
+- "Get Started" CTA button linking to `/new-client`
+- Instagram icon (external link)
+- "Schedule a Free Consultation" CTA button in hero section of every page (except Contact)
 
 ---
 
@@ -173,9 +184,46 @@ npm run preview  # Preview production build
 
 ---
 
+## ADA / WCAG 2.1 AA Compliance Requirements
+
+Therapist websites must be accessible under ADA as "places of public accommodation." The DOJ recognizes WCAG 2.1 AA as the compliance standard. Non-compliant websites risk lawsuits.
+
+### Perceivable (WCAG 1.x)
+- All images must have descriptive alt text or be marked decorative (`alt=""`)
+- Text color contrast must meet 4.5:1 for normal text, 3:1 for large text (18pt+)
+- No information conveyed by color alone
+- Captions/transcripts required for any future video/audio content
+
+### Operable (WCAG 2.x)
+- Full keyboard navigation — all interactive elements reachable and operable
+- Visible focus indicators on all interactive elements (no `outline: none` without replacement)
+- Skip-to-content link to bypass repeated navigation
+- No content that flashes more than 3 times per second
+- `prefers-reduced-motion` media query to disable animations for vestibular disorder users
+
+### Understandable (WCAG 3.x)
+- Proper heading hierarchy (single `<h1>` per page, no skipped levels)
+- Form inputs must have associated `<label>` elements
+- Required fields must use `required` or `aria-required="true"`
+- Error messages must be linked to inputs via `aria-describedby`
+- Status messages (success/error) must use `role="alert"` or `aria-live`
+
+### Robust (WCAG 4.x)
+- Icon-only links/buttons must have `aria-label` text
+- Links opening new tabs should indicate this (e.g., "opens in new tab")
+- Semantic HTML (`<nav>`, `<main>`, `<header>`, `<footer>`, `<section>`)
+- Navigation landmarks should have `aria-label` when multiple exist
+
+### Additional Best Practices
+- Descriptive link text (avoid generic "Learn more" or "Click here")
+- Mobile responsive design
+- PDF/document files must be screen-reader accessible
+- Regular accessibility audits
+
+---
+
 ## Future Considerations
 
-- [ ] Add blog/articles section
 - [ ] Calendar integration for booking
 - [ ] Testimonials page
 - [ ] Resource library for clients

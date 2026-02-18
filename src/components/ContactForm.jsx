@@ -91,11 +91,13 @@ function ContactForm() {
     <div className="contact-form-section">
       <h2>Get in Touch</h2>
       <form onSubmit={handleSubmit} className="contact-form">
-        {submitStatus && (
-          <div className={`contact-form-message ${submitStatus.type}`}>
-            {submitStatus.message}
-          </div>
-        )}
+        <div role="alert" aria-live="polite">
+          {submitStatus && (
+            <div className={`contact-form-message ${submitStatus.type}`}>
+              {submitStatus.message}
+            </div>
+          )}
+        </div>
 
         <div className="contact-form-group">
           <label htmlFor="name" className="contact-form-label">

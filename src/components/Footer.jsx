@@ -12,7 +12,7 @@ function Footer() {
           <p className="footer-links">
             <a href="https://youralignedheart.com">youralignedheart.com</a>
             <span className="separator">&middot;</span>
-            <a href="https://www.instagram.com/terra_artist_love/" target="_blank" rel="noopener noreferrer" className="footer-icon"><InstagramIcon size={20} /></a>
+            <a href="https://www.instagram.com/terra_artist_love/" target="_blank" rel="noopener noreferrer" className="footer-icon" aria-label="Instagram (opens in new tab)"><InstagramIcon size={20} /></a>
           </p>
           <p className="footer-copyright">
             &copy; {currentYear}

@@ -60,7 +60,7 @@ function Header() {
               <Link to="/new-client" className="nav-btn" onClick={handleLinkClick}>Get Started</Link>
             </li>
             <li>
-              <a href="https://www.instagram.com/terra_artist_love/" target="_blank" rel="noopener noreferrer" className="nav-link nav-icon">
+              <a href="https://www.instagram.com/terra_artist_love/" target="_blank" rel="noopener noreferrer" className="nav-link nav-icon" aria-label="Instagram (opens in new tab)">
                 <InstagramIcon size={22} />
               </a>
             </li>

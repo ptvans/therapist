@@ -16,8 +16,9 @@ function App() {
   return (
     <Router>
       <div className="app">
+        <a href="#main-content" className="skip-link">Skip to main content</a>
         <Header />
-        <main className="main-content">
+        <main id="main-content" className="main-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

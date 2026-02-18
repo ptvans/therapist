@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import gardenPortrait from '../photos/garden-portrait.jpg'
-import ContactForm from '../components/ContactForm'
 import './About.css'
 
 function About() {
@@ -9,7 +8,6 @@ function About() {
       <section className="section-minimal">
         <div className="container">
           <h1>My Approach</h1>
-          <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
 
           <div className="about-layout">
             <div className="about-content">
@@ -38,7 +36,7 @@ function About() {
             </div>
 
             <div className="about-portrait">
-              <img src={gardenPortrait} alt="Terra" />
+              <img src={gardenPortrait} alt="" />
             </div>
           </div>
         </div>
@@ -74,11 +72,12 @@ function About() {
         </div>
       </section>
 
-      <section className="section-minimal">
+      <section className="section-minimal" style={{ textAlign: 'center' }}>
         <div className="container">
-          <ContactForm />
+          <Link to="/new-client" className="btn btn-primary">Schedule a Free Consultation</Link>
         </div>
       </section>
+
     </div>
   )
 }

@@ -5,11 +5,11 @@
 }
 
 :root {
-  --primary-color: #6B9080;
+  --primary-color: #4E7A6A;
   --secondary-color: #A4C3B2;
   --accent-color: #CCE3DE;
   --text-primary: #2C3E50;
-  --text-secondary: #6B7C85;
+  --text-secondary: #536B74;
   --background: #FAFCFB;
   --background-alt: #F0F5F3;
   --white: #FFFFFF;
@@ -60,15 +60,19 @@ a {
 }
 
 a:hover {
-  color: var(--secondary-color);
+  color: #3D6354;
 }
 
 button {
   font-family: inherit;
   cursor: pointer;
   border: none;
-  outline: none;
   transition: all 0.3s ease;
+}
+
+*:focus-visible {
+  outline: 2px solid var(--text-primary);
+  outline-offset: 2px;
 }
 
 input, textarea, select {

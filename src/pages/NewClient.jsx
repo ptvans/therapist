@@ -28,7 +28,7 @@ function NewClient() {
         <div className="new-client-content">
           <div className="client-info">
             <div className="client-portrait">
-              <img src={terraPortrait} alt="Terra" />
+              <img src={terraPortrait} alt="" />
             </div>
 
             <div className="info-card">
